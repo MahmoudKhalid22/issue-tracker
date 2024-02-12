@@ -10,7 +10,7 @@ const NavBar = () => {
 
   const links = [
     { label: "Dashboard", href: "/" },
-    { label: "Issue", href: "/issues" },
+    { label: "Issues", href: "/issues" },
   ];
   return (
     <nav className="flex gap-6 border-b mb-5 px-5 h-14 items-center">
@@ -25,8 +25,8 @@ const NavBar = () => {
             href={link.href}
             className={classnames({
               "text-zinc-900": link.href === currentPath,
-              "text-zinc-500": link.href !== currentPath,
-              "hover: text-zinc-800 transition-colors": true,
+              "text-zinc-400": link.href !== currentPath,
+              "hover:text-zinc-900 transition-colors": true,
             })}
           >
             {link.label}
